@@ -7,6 +7,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.annointerface.Auth;
+import com.example.annointerface.PreAuth;
 import com.example.domain.User;
 import com.example.service.HomeService;
 
@@ -23,5 +25,5 @@ public class HomeController {
 		String msg = homeService.checkString("test");
 		return "hello world : "+user +" ,  msg :"+msg;
 	}
-
+	
 }
